@@ -1,1 +1,5 @@
-Instalación bspwm y sxhkd
+Instalación 
+-alacritty 
+-bspwm
+-sxhkd
+
