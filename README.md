@@ -1,1 +1,1 @@
-# parrotOS
+Instalación bspwm y sxhkd
