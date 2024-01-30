@@ -1,4 +1,4 @@
-Instalación 
+
 
 -alacritty 
 
@@ -7,5 +7,8 @@ Instalación
 -sxhkd
 
 Fuentes
+Configuracion zsh
+Instalacion picom
+
 
 
