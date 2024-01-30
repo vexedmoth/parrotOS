@@ -7,7 +7,9 @@
 -sxhkd
 
 Fuentes
+
 Configuracion zsh
+
 Instalacion picom
 
 
