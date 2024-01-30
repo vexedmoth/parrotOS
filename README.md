@@ -12,5 +12,5 @@ Configuracion zsh
 
 Instalacion picom
 
-
+Instalacion feh
 
