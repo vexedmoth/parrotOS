@@ -14,3 +14,5 @@ Instalacion picom
 
 Instalacion feh
 
+Rofi y nanorc config
+
