@@ -16,3 +16,5 @@ Instalacion feh
 
 Rofi y nanorc config
 
+Polybar
+
