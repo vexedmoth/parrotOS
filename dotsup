@@ -18,7 +18,7 @@ do
             #Pull every change from GitHub
             git -C $DOTFILES_PATH pull
 
-            #Delete all files from "dotfiles" dir except "Screenshots", "README.md" and ".git"
+            #Delete all files from "dotfiles" dir except "README.md" and ".git"
             find $DOTFILES_PATH -mindepth 1 -not \( -name '.git' -prune -or -name 'README.md' \) -exec rm -rf '{}' \;
 
             #Update ".config" dir
@@ -34,7 +34,8 @@ do
 
 
             #Update rest of the files
-            cp -r $HOME/.local/bin $DOTFILES_PATH
+            mkdir $DOTFILES_PATH/bin
+            cp -r $HOME/.local/bin/dotsup $DOTFILES_PATH
             cp -r /usr/share/fonts $DOTFILES_PATH
             cp -r $HOME/.zshrc $DOTFILES_PATH
 
