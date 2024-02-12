@@ -34,7 +34,6 @@ do
 
 
             #Update rest of the files
-            mkdir $DOTFILES_PATH/bin
             cp -r $HOME/.local/bin/dotsup $DOTFILES_PATH
             cp -r /usr/share/fonts $DOTFILES_PATH
             cp -r $HOME/.zshrc $DOTFILES_PATH
