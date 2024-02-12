@@ -1,0 +1,62 @@
+
+#### RELOAD ####
+
+# Reload sxhkd config files
+alt + shift + r
+	pkill -USR1 -x sxhkd
+
+# Quit/restart bspwm
+alt + shift + q
+	bspc quit
+
+#### PROGRAMS ####
+
+# Program launcher
+alt + m
+	rofi -show drun
+
+# Open browser
+alt + b
+	/usr/bin/brave-browser
+
+#### WINDOWS ####
+
+# Open terminal
+alt + i
+	alacritty
+
+# Close and kill window
+alt + {_,shift + }w
+	bspc node -{c,k}
+	
+# Fullscreen
+alt + {f,period}
+	bspc node -t '~{floating,fullscreen}'    
+
+# Resize window
+alt + ctrl + {h,j,k,l}
+	/home/vexedmoth/.config/bspwm/scripts/bspwm_resize {west,south,north,east}
+
+# Move window in the given direction
+alt + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# Move next/previous window
+alt + {_,shift + }space
+	bspc node -f {next,prev}.local.!hidden.window
+
+# Workspaces
+alt + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} focused:'^{1-9,10}'
+
+#### PRESELECT ####
+
+# Preselect the direction
+alt + shift + {Left,Down,Up,Right}
+	bspc node -p {west,south,north,east}
+
+# Cancel the preselection for the focused node
+alt + Return
+	bspc node -p cancel
+
+

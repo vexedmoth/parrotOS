@@ -1,0 +1,2 @@
+target=$1
+echo "$target" > ~/.config/polybar/scripts/target_to_hack/target
