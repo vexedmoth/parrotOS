@@ -31,7 +31,7 @@ do
             cp -r $HOME/.config/polybar $DOTFILES_PATH/.config
             cp -r $HOME/.config/sxhkd $DOTFILES_PATH/.config
             cp -r $HOME/.config/starship.toml $DOTFILES_PATH/.config
-
+			cp -r $HOME/.config/nvim $DOTFILES_PATH/.config
 
             #Update rest of the files
             cp -r $HOME/.local/bin/dotsup $DOTFILES_PATH

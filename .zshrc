@@ -37,6 +37,11 @@ if [ -d "/sbin" ] ;
   then PATH="/sbin:$PATH"
 fi
 
+# Adding nvim to PATH
+if [ -d "/opt/nvim-linux64/bin" ] ;
+  then PATH="/opt/nvim-linux64/bin:$PATH"
+fi
+
 
 # Bindkeys and aliases
 bindkey '^[s' autosuggest-accept
